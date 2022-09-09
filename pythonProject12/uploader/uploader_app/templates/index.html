@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <form method='post' enctype="multipart/form-data">
+        {% csrf_token %}
+      	<div class="mx-auto" style="width: 400px;">
+
+<!--			<div class="col-xs-8 col-xs-offset-4">-->
+<!--				<h2 style="text-align:center;">Объединение нескольких видео в одно</h2>-->
+<!--			</div>-->
+<!--			<hr />-->
+<!--			<div class="form-group">-->
+<!--				<label for="author">Автор</label>-->
+<!--				<input type="text" class="form-control" name="author" id="author" placeholder="Введите автора"-->
+<!--					Required>-->
+<!--			</div>-->
+<!--          <div class="form-group">-->
+<!--				<label for="title">Загаловок</label>-->
+<!--				<input type="text" class="form-control" name="title" id="title" placeholder="Введите описание"-->
+<!--					Required>-->
+<!--			</div>-->
+<!--          </div>-->
+<!--          <p>-->
+<!--							<label>Выбирите фото</label>-->
+<!--							<input type="file" name="photo" autocomplete="off" id="photo" required>-->
+<!--						</p>-->
+<!--          <p>-->
+<!--            <label>Выбирите несколько видео для склейки</label>-->
+<!--            <input type="file" name="video" autocomplete="off" id="video" required multiple></p>-->
+
+<!--        <input type="submit" value="Submit">-->
+
+           {{form.as_p}}
+             <input type="submit" value="Отправить">
+        </div>
+
+    </form>
+
+
+</body>
+</html>
+{% endblock %}
